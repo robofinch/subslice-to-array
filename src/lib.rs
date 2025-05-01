@@ -5,8 +5,8 @@
 //! [SubsliceToArrayRef]: crate::SubsliceToArrayRef
 //! [SubsliceToArrayMut]: crate::SubsliceToArrayMut
 // File links are not supported by rustdoc
-//! [LICENSE-APACHE]: https://github.com/robofinch/subslice_to_array/blob/main/LICENSE-APACHE
-//! [LICENSE-MIT]: https://github.com/robofinch/subslice_to_array/blob/main/LICENSE-MIT
+//! [LICENSE-APACHE]: https://github.com/robofinch/subslice-to-array/blob/main/LICENSE-APACHE
+//! [LICENSE-MIT]: https://github.com/robofinch/subslice-to-array/blob/main/LICENSE-MIT
 //!
 //! <style>
 //! .rustdoc-hidden { display: none; }
