@@ -1,5 +1,19 @@
 #![no_std]
 
+// See https://linebender.org/blog/doc-include for this README inclusion strategy
+//! [SubsliceToArray]: crate::SubsliceToArray
+//! [SubsliceToArrayRef]: crate::SubsliceToArrayRef
+//! [SubsliceToArrayMut]: crate::SubsliceToArrayMut
+// File links are not supported by rustdoc
+//! [LICENSE-APACHE]: https://github.com/robofinch/subslice_to_array/blob/main/LICENSE-APACHE
+//! [LICENSE-MIT]: https://github.com/robofinch/subslice_to_array/blob/main/LICENSE-MIT
+//!
+//! <style>
+//! .rustdoc-hidden { display: none; }
+//! </style>
+#![doc =  include_str!("../README.md")]
+
+
 /// Conversion from a subslice with copyable data to an array, with compile-time checks
 /// on the `START..END` range used to index into a source slice.
 pub trait SubsliceToArray<T, const N: usize> {
@@ -184,6 +198,13 @@ pub trait SubsliceToArrayMut<T, const N: usize> {
     /// # Examples
     /// ```
     /// use subslice_to_array::SubsliceToArrayMut as _;
+    /// let data: &mut [u8] = &mut [0, 1, 2, 3, 4];
+    /// *data.subslice_to_array_mut::<1, 3>() = 0xffff_u16.to_le_bytes();
+    /// assert_eq!(
+    ///     data,
+    ///     &mut [0, 255, 255, 3, 4],
+    /// );
+    ///
     /// let data: &mut [u8] = &mut [0, 1, 2, 3, 4, 5, 6, 7, 8];
     /// assert_eq!(
     ///     data.subslice_to_array_mut::<0, 4>(),
