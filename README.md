@@ -47,8 +47,8 @@ and cannot check at compile time whether the slice is too short; the conversion 
 panic (at runtime) if indices in a range are out-of-bounds for a slice.
 
 ## Examples
-```
-use subslice_to_array::{SubsliceToArray as _, SubsliceToArrayMut as _, SubsliceToArrayMut as _};
+```rust
+use subslice_to_array::{SubsliceToArray as _, SubsliceToArrayMut as _, SubsliceToArrayRef as _};
 let data: &[u8] = &[0, 1, 2, 3, 4, 5, 6, 7, 8];
 assert_eq!(
     data.subslice_to_array::<0, 4>(),
