@@ -2,7 +2,7 @@
 <h1> Subslice to Array </h1>
 </div>
 
-[<img alt="github" src="https://img.shields.io/badge/github-robofinch/subslice-to-array-08f?logo=github" height="20">](https://github.com/robofinch/subslice-to-array)
+[<img alt="github" src="https://img.shields.io/badge/github-robofinch/subslice--to--array-08f?logo=github" height="20">](https://github.com/robofinch/subslice-to-array)
 [![Latest version](https://img.shields.io/crates/v/subslice-to-array.svg)](https://crates.io/crates/subslice-to-array)
 [![Documentation](https://img.shields.io/docsrs/subslice-to-array)](https://docs.rs/subslice-to-array)
 [![Apache 2.0 or MIT license.](https://img.shields.io/badge/license-Apache--2.0_OR_MIT-blue.svg)](#license)
