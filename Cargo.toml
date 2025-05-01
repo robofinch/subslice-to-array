@@ -7,9 +7,8 @@ authors = ["Finley Huggins"]
 license = "MIT OR Apache-2.0"
 readme = "README.md"
 repository = "https://github.com/robofinch/subslice-to-array"
-# documention = TODO
-# categories = TODO
-# keywords = TODO
-# description = TODO
+description = "Extract fixed-range subslices as arrays, with compile-time checks"
+keywords = ["subslice", "array", "slice", "const", "arrayref"]
+categories = ["rust-patterns", "no-std", "no-std::no-alloc"]
 
 [dependencies]
